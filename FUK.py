@@ -5,6 +5,21 @@ from bs4 import BeautifulSoup
 def convert_hex(hex_data, num_bytes, offset=0):
     return int(hex_data[offset:offset + num_bytes*2], 16)
 
+def reverse_bytes(hex_data):
+    new_hex = ""
+    for i in range(int(len(hex_data)/2)):
+        new_hex = new_hex + hex_data[len(hex_data) - 1 - 2*i - 1:len(hex_data) - 1 - 2*i + 1]
+    return new_hex
+
+def parse_hex(hex_data, field_names, field_bytes):
+    start_pos = 0
+    field_vals = []
+    for i in range(len(field_names)):
+        field_vals.append(hex_data[start_pos:start_pos + field_bytes[i]*2])
+        start_pos = start_pos + field_bytes[i]*2
+    return field_vals
+
+
 def n(label, s, i):
     print(label, s[:i])
     return s[i:]
@@ -23,14 +38,30 @@ raw_hex = soup.get_text()
 txs = raw_hex[80:]
 
 p = raw_hex
-
-
-print(raw_hex.find('4570e820145155293685a5c0c4a72dd38ce3971d410055'))
+q = reverse_bytes(raw_hex)
+part_merkle_root = '4570e820145155293685a5c0c4a72dd38ce3971d410055'
+# print(q.find(part_merkle_root))
 # for i in range(30):
 #     print('\n', i)
 #     print('four byte quantity:')
 #     print(raw_hex[i:i + 64])
     # print(convert_hex(raw_hex, 32, i))
+
+genesis_field_names = ['version', 'previous block', 'merkle root', 'timestamp', 'difficulty target', 'nonce', 'no. tx',
+               'version', 'input', 'prev output', 'script length', 'scriptsig', 'sequence', 'outputs', 'no. BTC', 'PK script length',
+               'pk script', 'lock time']
+
+genesis_field_bytes = [4, 32, 32, 4, 4, 4, 1, 4, 1, 36, 1, 77, 4, 1, 8, 1, 67, 4]
+
+field_names = ['block size', 'version', 'prev block hash', 'merkle root hash', 'timestamp', 'difficulty target', 'nonce']
+
+field_bytes = [4, 4, 32, 32, 4, 4, 4]
+
+field_vals = parse_hex(p, field_names, field_bytes)
+
+for i in range(len(field_bytes)):
+    print(field_names[i] + ": " + field_vals[i])
+    print()
 
 # print('\nHEADER')
 # p = n('block size', p, 8)
