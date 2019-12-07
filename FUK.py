@@ -2,8 +2,8 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
 """Returns the decimal conversion of the specified number of bytes of hex data from the start bit (zero by default)"""
-def convert_hex(hex_data, num_bytes, offset=0):
-    return int(hex_data[offset:offset + num_bytes*2], 16)
+def convert_hex(hex_data):
+    return int(hex_data, 16)
 
 def reverse_bytes(hex_data):
     new_hex = ""
@@ -18,7 +18,6 @@ def parse_hex(hex_data, field_names, field_bytes):
         field_vals.append(hex_data[start_pos:start_pos + field_bytes[i]*2])
         start_pos = start_pos + field_bytes[i]*2
     return field_vals
-
 
 def n(label, s, i):
     print(label, s[:i])
@@ -53,9 +52,9 @@ genesis_field_names = ['version', 'previous block', 'merkle root', 'timestamp', 
 
 genesis_field_bytes = [4, 32, 32, 4, 4, 4, 1, 4, 1, 36, 1, 77, 4, 1, 8, 1, 67, 4]
 
-field_names = ['block size', 'version', 'prev block hash', 'merkle root hash', 'timestamp', 'difficulty target', 'nonce']
+field_names = ['version', 'prev block hash', 'merkle root hash', 'timestamp', 'difficulty target', 'nonce']
 
-field_bytes = [4, 4, 32, 32, 4, 4, 4]
+field_bytes = [4, 32, 32, 4, 4, 4]
 
 field_vals = parse_hex(p, field_names, field_bytes)
 
