@@ -14,16 +14,15 @@ def get_address_weird_result(pubkey):
     return adr
 
 def get_address(pubkey):
-    pk = binascii.unhexlify(pubkey)
-    print(type(pk))
+    bytes_pubkey = binascii.unhexlify(pubkey)
     h = hashlib.new('ripemd160')
-    h.update(sha256(pk).digest())
-    adr = h.hexdigest()
-    adr = '00' + adr
-    adr2 = binascii.unhexlify(adr)
-    adr2 = sha256(sha256(adr2).digest()).hexdigest()
-    checksum_addition = adr2[:8]
-    checksum = adr + checksum_addition
+    h.update(sha256(bytes_pubkey).digest())
+    ext_pubkey = h.hexdigest()
+    ext_pubkey = '00' + ext_pubkey
+    bytes_ext_pubkey = binascii.unhexlify(ext_pubkey)
+    hash = sha256(sha256(bytes_ext_pubkey).digest()).hexdigest()
+    checksum_addition = hash[:8]
+    checksum = ext_pubkey + checksum_addition
     bin_checksum = binascii.unhexlify(checksum)
     return b58encode(bin_checksum).decode()
 
