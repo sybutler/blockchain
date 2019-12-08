@@ -23,6 +23,7 @@ def n(label, s, i):
     print(label, s[:i])
     return s[i:]
 
+
 # genesis block
 # url = "https://blockchain.info/rawblock/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f?format=hex"
 
@@ -56,11 +57,11 @@ field_names = ['version', 'prev block hash', 'merkle root hash', 'timestamp', 'd
 
 field_bytes = [4, 32, 32, 4, 4, 4]
 
-field_vals = parse_hex(p, field_names, field_bytes)
+# field_vals = parse_hex(p, field_names, field_bytes)
 
-for i in range(len(field_bytes)):
-    print(field_names[i] + ": " + field_vals[i])
-    print()
+# for i in range(len(field_bytes)):
+#     print(field_names[i] + ": " + field_vals[i])
+#     print()
 
 # print('\nHEADER')
 # p = n('block size', p, 8)
