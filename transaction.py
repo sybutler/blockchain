@@ -25,7 +25,12 @@ class TransactionParser:
             else:
                 field_vals[fields[i]] = hex_data[start_pos + transaction_bytes[i]*2]
                 start_pos = start_pos + transaction_bytes[i]*2
-        return field_vals
+        return Transaction(field_vals['version'],
+                           field_vals['input count'],
+                           field_vals['txIns'],
+                           field_vals['output count'],
+                           field_vals['txOuts'],
+                           field_vals['timelock'])
 
     @staticmethod
     def parse_txIns(num_txIns, hex_data):
