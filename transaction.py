@@ -2,6 +2,9 @@ from FUK import reverse_bytes, convert_hex
 from transaction_fields import Transaction
 from transaction_fields import TxIn
 from transaction_fields import TxOut
+import hashlib
+from hashlib import sha256
+import binascii
 
 class TransactionParser:
 
@@ -77,6 +80,17 @@ class TransactionParser:
             value = convert_hex(reverse_bytes(value)) / 100000000
             txOuts.append(TxOut(value, script_length, output_script))
         return txOuts, start_pos
+
+    @staticmethod
+    def get_address(pubkey):
+        pk = binascii.hexlify(bytes(pubkey, 'utf-8'))
+        h = hashlib.new('ripemd160')
+        adr = h.update(sha256(pk).digest()).hexdigest()
+        adr = '00' + adr
+        return adr
+
+
+
 
 # TODO before adding fields to objects, reverse endian and convert to decimal if necessary
 # TODO other transaction testing - segwit?
