@@ -1,9 +1,14 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 """Returns the decimal conversion of the specified number of bytes of hex data from the start bit (zero by default)"""
 def convert_hex(hex_data):
     return int(hex_data, 16)
+
+# converts unix time stamp in hex to a datetime (timezone...?)
+def convert_unix(unix_time):
+    return datetime.fromtimestamp(unix_time)
 
 def reverse_bytes(hex_data):
     new_hex = ""
