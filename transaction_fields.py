@@ -26,6 +26,7 @@ class TxOut:
         print('value:', self.value)
         print('script length:', self.script_length)
         print('output script:', self.output_script)
+        return self.value
 
 
 class Transaction:
@@ -38,6 +39,9 @@ class Transaction:
         self.timelock = convert_hex(reverse_bytes(timelock))
 
     def print_tx(self):
+
+        total_output = 0
+
         print('version:', self.version)
         print('input count:', self.input_count)
         for i in range(self.input_count):
@@ -46,7 +50,8 @@ class Transaction:
         print('output count:', self.output_count)
         for i in range(self.output_count):
             print('outputs:', self.outputs[i])
-            self.outputs[i].print_txOut()
+            total_output += self.outputs[i].print_txOut()  # sums outputs and prints individual output
         print('lock time:', self.timelock)
-        print()
+        print('total output:', total_output)
+        return total_output
 

@@ -6,8 +6,21 @@ import hashlib
 from hashlib import sha256
 import binascii
 
-
 class TransactionParser:
+
+    @staticmethod
+    # hex_data is entire block hash *minus* block header hash
+    def parse_all_block_transactions(hex_data, num_transactions):
+        transactions = []
+
+        for i in range(num_transactions):
+            transaction, updated_starting_point = TransactionParser.parse_transaction(hex_data)
+            transactions.append(transaction)
+            hex_data = hex_data[updated_starting_point:]
+
+        return transactions
+
+
 
     @staticmethod
     def parse_transaction(hex_data):
@@ -33,7 +46,7 @@ class TransactionParser:
                            field_vals['txIns'],
                            field_vals['output count'],
                            field_vals['txOuts'],
-                           field_vals['timelock'])
+                           field_vals['timelock']), start_pos
 
     @staticmethod
     def parse_txIns(num_txIns, hex_data):
@@ -64,6 +77,7 @@ class TransactionParser:
                 if j == 1:
                     txOut_bytes[j + 1] = convert_hex(txOut_fields[j])
             value, script_length, output_script = txOut_fields
+            value = convert_hex(reverse_bytes(value)) / 100000000
             txOuts.append(TxOut(value, script_length, output_script))
         return txOuts, start_pos
 
