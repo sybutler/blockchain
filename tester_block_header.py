@@ -27,7 +27,7 @@ raw_hex = soup.get_text()
 
 
 block_header_info, start_pos = BlockHeaderParser.parse_block_header(raw_hex)
-# block_header_info.print_block_header()
+block_header_info.print_block_header()
 
 transactions = TransactionParser.parse_all_block_transactions(raw_hex[start_pos:], block_header_info.tx_counter)
 print(len(transactions))
