@@ -2,6 +2,8 @@ from block_header import BlockHeaderParser
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from transaction import TransactionParser
+from FUK import convert_float_for_printing
+
 
 
 # recent
@@ -28,13 +30,23 @@ raw_hex = soup.get_text()
 
 block_header_info, start_pos = BlockHeaderParser.parse_block_header(raw_hex)
 # block_header_info.print_block_header()
-
-transactions = TransactionParser.parse_all_block_transactions(raw_hex[start_pos:], block_header_info.tx_counter)
-print(len(transactions))
+try:
+    transactions = TransactionParser.parse_all_block_transactions(raw_hex[start_pos:], block_header_info.tx_counter)
+except:
+    print('Error: Timeout. The Bitcoin website may be down. Please try again later.')
 total = 0
+total_fee = 0
+total_other = 0
+
 for i in range(len(transactions)):
 
-    total += transactions[i].print_tx()
-    print()
+        curr_total, curr_fee, curr_other = transactions[i].print_tx()
+        total += curr_total
+        total_fee += curr_fee
+        total_other += curr_other
+        print()
 
 print(total)
+print(total - total_fee)
+print(total_fee)
+print(total_other)
