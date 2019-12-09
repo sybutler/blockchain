@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8427e814-b95e-4354-b033-f416407ed665" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/input_output_parser.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/op_codes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/blockchain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blockchain.iml" afterDir="false" />
@@ -10,6 +11,15 @@
       <change beforePath="$PROJECT_DIR$/FUK.py" beforeDir="false" afterPath="$PROJECT_DIR$/FUK.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blargh.py" beforeDir="false" afterPath="$PROJECT_DIR$/blargh.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tester_block_header.py" beforeDir="false" afterPath="$PROJECT_DIR$/tester_block_header.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/heebeejeebees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FUK.py" beforeDir="false" afterPath="$PROJECT_DIR$/FUK.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_header_fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/block_header_fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tester_block_header.py" beforeDir="false" afterPath="$PROJECT_DIR$/tester_block_header.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/transaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction_fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/transaction_fields.py" afterDir="false" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,19 +28,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/FUKblockchain$heebeejeebees.coverage" NAME="heebeejeebees Coverage Results" MODIFIED="1575849159031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FUKblockchain$tester.coverage" NAME="tester Coverage Results" MODIFIED="1575825053076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FUKblockchain$tester_block_header.coverage" NAME="tester_block_header Coverage Results" MODIFIED="1575834393890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FUKblockchain$FUK.coverage" NAME="FUK Coverage Results" MODIFIED="1575825376912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FUKblockchain$tester_block_header.coverage" NAME="tester_block_header Coverage Results" MODIFIED="1575852488095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FUKblockchain$FUK.coverage" NAME="FUK Coverage Results" MODIFIED="1575835816260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FUSProjectUsageTrigger">
+    <session id="1356231002">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="md" value="1" />
+          <entry key="py" value="5" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Markdown" value="1" />
+          <entry key="Python" value="5" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="7718" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="7718" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FUK.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="680">
               <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
+=======
+            <state relative-caret-position="240">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1575849783320" expanded="true" signature="425:582" ph="..." />
+                <marker date="1575849783320" expanded="true" signature="1157:1158" ph="..." />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
               </folding>
             </state>
           </provider>
@@ -39,11 +90,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tester.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret selection-end-column="42" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="1462">
+              <caret line="86" column="36" selection-start-line="86" selection-end-line="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </state>
           </provider>
         </entry>
@@ -51,20 +117,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transaction.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-755">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="153">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transaction_fields.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
               <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/transaction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+                <marker date="1575851025223" expanded="true" signature="3258:5378" ph="..." />
+                <marker date="1575851025223" expanded="true" signature="6572:7211" ph="..." />
+              </folding>
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </state>
           </provider>
         </entry>
@@ -72,8 +156,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/op_code_parser_tester.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="153">
               <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+=======
+            <state relative-caret-position="226">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </state>
           </provider>
         </entry>
@@ -81,20 +173,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blargh.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="287">
               <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="68">
+              <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-end-line="5" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input_output_parser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tester_block_header.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </state>
           </provider>
         </entry>
@@ -102,8 +210,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/op_codes.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="272">
               <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+=======
+            <state relative-caret-position="68">
+              <caret line="7" selection-start-line="45" selection-start-column="2" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heebeejeebees.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </state>
           </provider>
         </entry>
@@ -119,12 +241,31 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dif_target</find>
       <find>target</find>
+<<<<<<< HEAD
       <find>print(</find>
       <find>OP_CHECKSEQUENCEVERIFY</find>
       <find>negate</find>
       <find>OP_NOP10</find>
+=======
+      <find>index:</find>
+      <find>parse_txIns</find>
+      <find>119</find>
+      <find>reverse_butes</find>
+      <find>3ee</find>
+      <find>3ee99</find>
+      <find>get_TxIn_valu</find>
+      <find>index: 9</find>
+      <find>transactionPr</find>
+      <find>INDEX: 9</find>
+      <find>print</find>
+      <find>in par</find>
+      <find>get_Tx</find>
+      <find>dif_target</find>
+      <find>fee:</find>
+      <find>print('in</find>
+      <find>here</find>
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,6 +277,9 @@
         <option value="$USER_HOME$/Desktop/test.py" />
         <option value="$PROJECT_DIR$/tester.py" />
         <option value="$PROJECT_DIR$/block_header.py" />
+        <option value="$PROJECT_DIR$/block_header_fields.py" />
+        <option value="$PROJECT_DIR$/heebeejeebees.py" />
+        <option value="$PROJECT_DIR$/FUK.py" />
         <option value="$PROJECT_DIR$/transaction.py" />
         <option value="$PROJECT_DIR$/transaction_fields.py" />
         <option value="$PROJECT_DIR$/FUK.py" />
@@ -159,8 +303,13 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-11" />
+<<<<<<< HEAD
     <option name="width" value="980" />
     <option name="height" value="1031" />
+=======
+    <option name="width" value="1472" />
+    <option name="height" value="1381" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -171,8 +320,22 @@
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="FUKblockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FUKblockchain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FUKblockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="FUKblockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </path>
           </expand>
           <select />
@@ -184,7 +347,11 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Sy Butler/PycharmProjects/FUKblockchain/transaction_fields.py" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -249,7 +416,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="op_code_parser_tester" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="heebeejeebees" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
       <module name="blockchain" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,7 +432,12 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/op_code_parser_tester.py" />
+=======
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heebeejeebees.py" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,6 +495,7 @@
       <item itemvalue="Python.blargh" />
       <item itemvalue="Python.tester" />
       <item itemvalue="Python.tester_block_header" />
+<<<<<<< HEAD
       <item itemvalue="Python.op_code_parser_tester" />
     </list>
     <recent_temporary>
@@ -328,6 +505,17 @@
         <item itemvalue="Python.tester" />
         <item itemvalue="Python.tester_block_header" />
         <item itemvalue="Python.FUK" />
+=======
+      <item itemvalue="Python.heebeejeebees" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tester_block_header" />
+        <item itemvalue="Python.heebeejeebees" />
+        <item itemvalue="Python.FUK" />
+        <item itemvalue="Python.tester" />
+        <item itemvalue="Python.blargh" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
       </list>
     </recent_temporary>
   </component>
@@ -342,6 +530,14 @@
       <option name="presentableId" value="Default" />
       <updated>1575510564193</updated>
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/sybutler/blockchain&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1575835106076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575835106076</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -354,14 +550,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15844786" />
+=======
+    <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19943622" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.43085107" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27482268" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -369,6 +573,15 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291367" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.320922" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2631579" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.7759398" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291367" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.0015037594" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.48758864" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.39893618" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -400,6 +613,11 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="parsing all transactions with one function" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/sybutler/blockchain&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/sybutler/blockchain&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -472,6 +690,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/urllib/request.py" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/block_header.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -479,11 +698,33 @@
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/urllib/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="649" selection-start-line="649" selection-end-line="649" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/680874972/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="114">
           <caret line="2083" column="8" selection-start-line="2083" selection-start-column="8" selection-end-line="2083" selection-end-column="8" />
         </state>
@@ -500,12 +741,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+=======
+        <state relative-caret-position="226">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/op_codes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -565,6 +811,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="42" />
+=======
+    <entry file="file://$PROJECT_DIR$/tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_header_fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blargh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" selection-start-line="45" selection-start-column="2" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heebeejeebees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FUK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1575849783320" expanded="true" signature="425:582" ph="..." />
+            <marker date="1575849783320" expanded="true" signature="1157:1158" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester_block_header.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
@@ -573,17 +865,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/transaction_fields.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="98">
           <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+=======
+        <state relative-caret-position="1462">
+          <caret line="86" column="36" selection-start-line="86" selection-end-line="87" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/transaction.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-755">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
+=======
+        <state relative-caret-position="255">
+          <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+>>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
+            <marker date="1575851025223" expanded="true" signature="3258:5378" ph="..." />
+            <marker date="1575851025223" expanded="true" signature="6572:7211" ph="..." />
           </folding>
         </state>
       </provider>
