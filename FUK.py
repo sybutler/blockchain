@@ -46,9 +46,6 @@ def n(label, s, i):
 
 def convert_float_for_printing(x):
 
-    ctx = decimal.Context()
-    ctx.prec = 20
-
     if x < 0:
         return '0.00000000'
 

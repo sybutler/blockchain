@@ -36,12 +36,18 @@ except:
 
 
 block_header_info, start_pos = BlockHeaderParser.parse_block_header(raw_hex)
-# block_header_info.print_block_header()
+
+block_header_info.print_block_header()
 try:
     transactions = TransactionParser.parse_all_block_transactions(raw_hex[start_pos:], block_header_info.tx_counter)
 except:
     print('Error: Timeout. The Bitcoin website may be down. Please try again later.')
+<<<<<<< HEAD
 total_volume = 0
+=======
+
+total = 0
+>>>>>>> refs/remotes/origin/master
 total_fee = 0
 total_other = 0
 test_reward = 0
