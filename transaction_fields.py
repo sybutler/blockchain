@@ -38,9 +38,9 @@ class TxOut:
 class Transaction:
     def __init__(self, version, input_count, txIn_list, output_count, txOut_list, timelock):
         self.version = version
-        self.input_count = convert_hex(input_count)
+        self.input_count = convert_hex(reverse_bytes(input_count))
         self.inputs = txIn_list
-        self.output_count = convert_hex(output_count)
+        self.output_count = convert_hex(reverse_bytes(output_count))
         self.outputs = txOut_list
         self.timelock = convert_hex(reverse_bytes(timelock))
 
