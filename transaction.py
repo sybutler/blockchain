@@ -7,7 +7,7 @@ from transaction_fields import TxOut
 import hashlib
 from hashlib import sha256
 import binascii
-
+from tqdm import tqdm
 
 class TransactionParser:
 
@@ -16,12 +16,13 @@ class TransactionParser:
     def parse_all_block_transactions(hex_data, num_transactions):
         transactions = []
 
-        for i in range(num_transactions):
+
+        for i in tqdm(range(num_transactions)):
             transaction, updated_starting_point = TransactionParser.parse_transaction(hex_data)
             # transaction.print_tx()
             transactions.append(transaction)
             hex_data = hex_data[updated_starting_point:]
-            print_progress(i, num_transactions)
+            # print_progress(i, num_transactions)
 
         return transactions
 
