@@ -1,4 +1,4 @@
-from FUK import convert_hex, reverse_bytes, convert_float_for_printing, get_output_address, get_input_address, double_sha256
+from utils import convert_hex, reverse_bytes, convert_float_for_printing, get_output_address, get_input_address, double_sha256
 from input_output_parser import IO_Parser
 
 class TxIn:

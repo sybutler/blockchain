@@ -1,4 +1,4 @@
-from FUK import reverse_bytes, convert_hex
+from utils import reverse_bytes, convert_hex
 from op_codes import OP_CODES
 
 

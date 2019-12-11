@@ -1,5 +1,4 @@
-from FUK import convert_hex, reverse_bytes, convert_unix
-
+from utils import convert_hex, reverse_bytes, convert_unix
 
 class Block_Header:
     def __init__(self, version, prev_block_hash, merkle_root_hash, timestamp, dif_bits, nonce, tx_counter):

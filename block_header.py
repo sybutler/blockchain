@@ -1,4 +1,4 @@
-from FUK import reverse_bytes, convert_hex
+from utils import reverse_bytes, convert_hex
 from block_header_fields import Block_Header
 
 

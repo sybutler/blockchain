@@ -1,13 +1,12 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-from FUK import reverse_bytes, convert_hex, print_progress, convert_float_for_printing
+from utils import reverse_bytes, convert_hex
 from transaction_fields import Transaction
 from transaction_fields import TxIn
 from transaction_fields import TxOut
 import hashlib
 from hashlib import sha256
 import binascii
-from tqdm import tqdm
 
 class TransactionParser:
 
@@ -17,12 +16,10 @@ class TransactionParser:
         transactions = []
 
 
-        for i in tqdm(range(num_transactions)):
+        for i in range(num_transactions):
             transaction, updated_starting_point = TransactionParser.parse_transaction(hex_data)
-            # transaction.print_tx()
             transactions.append(transaction)
             hex_data = hex_data[updated_starting_point:]
-            # print_progress(i, num_transactions)
 
         return transactions
 
@@ -30,7 +27,6 @@ class TransactionParser:
 
     @staticmethod
     def parse_transaction(hex_data):
-        # print('in parse_transaction')
         transaction_bytes = [4, 1, -1, 1, -2, 4]
         fields = ['version', 'input count', 'txIns',
                   'output count', 'txOuts', 'timelock']
@@ -70,9 +66,6 @@ class TransactionParser:
 
     @staticmethod
     def parse_transactions_for_indexed_output(hex_data, index):
-        # print('in parse_transactions_for_indexed_output')
-
-        # print('INDEX:', index)
 
         transaction_bytes = [4, 1, -1, 1, -2, 4]
         fields = ['version', 'input count', 'txIns',
@@ -93,7 +86,6 @@ class TransactionParser:
                 elif convert_hex(field_vals[fields[i]]) == 255:
                     field_vals[fields[i]] = reverse_bytes(hex_data[start_pos:start_pos + 16])
                     start_pos = start_pos + 16
-                # print(fields[i], field_vals[fields[i]])
 
             elif fields[i] is 'txIns':
                 txIns, offset = TransactionParser.parse_txIns_dummy(convert_hex(field_vals['input count']),
@@ -109,13 +101,11 @@ class TransactionParser:
             else:
                 field_vals[fields[i]] = hex_data[start_pos:start_pos + transaction_bytes[i] * 2]
                 start_pos = start_pos + transaction_bytes[i] * 2
-        # print(len(txIns))
-        # print(len(txOuts))
+
         return txOuts[int(index)].value
 
     @staticmethod
     def parse_txIns(num_txIns, hex_data):
-        # print('in parse_txIns')
         txIn_bytes = [32, 4, 1, -1, 4]
         txIns = []
         start_pos = 0
@@ -131,13 +121,11 @@ class TransactionParser:
                 txIns.append(TxIn(prev_txid, index, script_length, input_script, sequence, -1))  # -1 put in for value in coinbase
             else:
                 value = TransactionParser.get_TxIn_value(prev_txid, index)
-                # value = -2
                 txIns.append(TxIn(prev_txid, index, script_length, input_script, sequence, value))
         return txIns, start_pos
 
     @staticmethod
     def parse_txIns_dummy(num_txIns, hex_data):
-        # print('in parse_txIns_dummy')
         txIn_bytes = [32, 4, 1, -1, 4]
         txIns = []
         start_pos = 0
@@ -154,7 +142,6 @@ class TransactionParser:
 
     @staticmethod
     def parse_txOuts(num_txOuts, hex_data):
-        # print('in parse_txOuts')
         txOut_bytes = [8, 1, -1]
         txOuts = []
         start_pos = 0
@@ -180,29 +167,16 @@ class TransactionParser:
 
     @staticmethod
     def get_TxIn_value(hash_, index):
-        # print('in get_TxIn_value')
 
         index = convert_hex((reverse_bytes(index)))
         hash_ = reverse_bytes(hash_)
 
 
         url = 'https://blockchain.info/rawtx/' + hash_ + '?format=hex'
-        # print('https://www.blockchain.com/btc/tx/' + hash_)
-
         html = urlopen(url)
         soup = BeautifulSoup(html, 'lxml')
         raw_hex = soup.get_text()
 
-        # if '2d494ab9' in url:
-        #     print(raw_hex)
-        #     print(len(raw_hex))
-        #     print(url)
 
         return TransactionParser.parse_transactions_for_indexed_output(raw_hex, index)
 
-
-# TODO before adding fields to objects, reverse endian and convert to decimal if necessary
-# TODO other transaction testing - segwit?
-# TODO coinbase transactions
-# TODO varint implementation: https://bitcoin.stackexchange.com/questions/40451/how-does-the-variable-length-integer-work/58416
-# TODO coinbase input script data element 1 is block height: https://bitcoin.stackexchange.com/questions/22368/what-are-the-differences-between-the-transaction-and-block-versions-v1-v2-v3
