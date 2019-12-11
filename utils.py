@@ -1,8 +1,8 @@
 from datetime import datetime
-import decimal
 from base58 import b58encode
 from hashlib import sha256
 import hashlib
+
 
 
 # Returns the decimal conversion of the specified number of bytes of hex data from the start bit (zero by default)
@@ -47,29 +47,31 @@ def n(label, s, i):
     print(label, s[:i])
     return s[i:]
 
-def convert_float_for_printing(x):
-
-    if x < 0:
-        return '0.00000000'
-
-    fee_to_print = format(ctx.create_decimal(repr(x)), 'f')
-    if fee_to_print == '0.0':
-        return '0.00000000'
-    if (len(fee_to_print)) < 5:
-        return fee_to_print
-
-    for i in range(len(fee_to_print) - 2):
-
-        # print(fee_to_print[i:i+3])
-        if fee_to_print[i:i + 3] == '999':
-            fee_to_print = fee_to_print[:i]
-            break
-
-    fee_to_print = fee_to_print[:len(fee_to_print) - 1] + str(int(fee_to_print[-1]) + 1)
-    dec_point = fee_to_print.index('.')
-    while len(fee_to_print[dec_point:]) <= 8:
-        fee_to_print = fee_to_print + '0'
-    return fee_to_print
+# def convert_float_for_printing(x):
+#
+#     if x < 0:
+#         return '0.00000000'
+#
+#     # ctx = decimal.Context()
+#
+#     fee_to_print = format(ctx.create_decimal(repr(x)), 'f')
+#     if fee_to_print == '0.0':
+#         return '0.00000000'
+#     if (len(fee_to_print)) < 5:
+#         return fee_to_print
+#
+#     for i in range(len(fee_to_print) - 2):
+#
+#         # print(fee_to_print[i:i+3])
+#         if fee_to_print[i:i + 3] == '999':
+#             fee_to_print = fee_to_print[:i]
+#             break
+#
+#     fee_to_print = fee_to_print[:len(fee_to_print) - 1] + str(int(fee_to_print[-1]) + 1)
+#     dec_point = fee_to_print.index('.')
+#     while len(fee_to_print[dec_point:]) <= 8:
+#         fee_to_print = fee_to_print + '0'
+#     return fee_to_print
 
 def double_sha256(hexstr):
     bytes_ext_pubkey = bytes.fromhex(hexstr)

@@ -1,4 +1,4 @@
-from utils import convert_hex, reverse_bytes, convert_float_for_printing, get_output_address, get_input_address, double_sha256
+from utils import convert_hex, reverse_bytes, get_output_address, get_input_address, double_sha256
 from input_output_parser import IO_Parser
 
 class TxIn:
@@ -85,7 +85,8 @@ class Transaction:
             print()
             print('lock time:', self.timelock)
             print('total output:', total_output)
-            print('fee:', convert_float_for_printing(total_output_of_inputs - total_output))
+            # print('fee:', convert_float_for_printing(total_output_of_inputs - total_output))
+            print('fee:', total_output_of_inputs - total_output)
             return total_output, total_output_of_inputs, 0
 
 
@@ -106,6 +107,6 @@ class Transaction:
         print()
         print('lock time:', self.timelock)
         print('total output:', total_output)
-        print('fee:', convert_float_for_printing(total_output_of_inputs - total_output))
+        # print('fee:', convert_float_for_printing(total_output_of_inputs - total_output))
         print('fee:', total_output_of_inputs - total_output)
         return total_output, total_output_of_inputs, total_output_of_inputs- total_output

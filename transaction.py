@@ -1,6 +1,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-from utils import reverse_bytes, convert_hex
+from utils import reverse_bytes, convert_hex, print_progress
 from transaction_fields import Transaction
 from transaction_fields import TxIn
 from transaction_fields import TxOut
@@ -20,6 +20,7 @@ class TransactionParser:
             transaction, updated_starting_point = TransactionParser.parse_transaction(hex_data)
             transactions.append(transaction)
             hex_data = hex_data[updated_starting_point:]
+            print_progress(i, num_transactions)
 
         return transactions
 
