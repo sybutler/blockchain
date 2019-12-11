@@ -204,3 +204,4 @@ class TransactionParser:
 # TODO other transaction testing - segwit?
 # TODO coinbase transactions
 # TODO varint implementation: https://bitcoin.stackexchange.com/questions/40451/how-does-the-variable-length-integer-work/58416
+# TODO coinbase input script data element 1 is block height: https://bitcoin.stackexchange.com/questions/22368/what-are-the-differences-between-the-transaction-and-block-versions-v1-v2-v3

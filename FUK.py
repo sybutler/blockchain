@@ -1,5 +1,8 @@
 from datetime import datetime
 import decimal
+from base58 import b58encode
+from hashlib import sha256
+import hashlib
 
 
 # Returns the decimal conversion of the specified number of bytes of hex data from the start bit (zero by default)
@@ -67,3 +70,23 @@ def convert_float_for_printing(x):
     while len(fee_to_print[dec_point:]) <= 8:
         fee_to_print = fee_to_print + '0'
     return fee_to_print
+
+def double_sha256(hexstr):
+    bytes_ext_pubkey = bytes.fromhex(hexstr)
+    return sha256(sha256(bytes_ext_pubkey).digest()).hexdigest()
+
+def get_output_address(hashed_pubkey, op_dup):
+    if op_dup:
+        prefix = '00'
+    else:
+        prefix = '05'
+    ext_pubkey = prefix + hashed_pubkey
+    hash = double_sha256(ext_pubkey)
+    bin_adr = bytes.fromhex(ext_pubkey + hash[:8])
+    return b58encode(bin_adr).decode()
+
+def get_input_address(pubkey, op_dup):
+    bytes_pubkey = bytes.fromhex(pubkey)
+    h = hashlib.new('ripemd160')
+    h.update(sha256(bytes_pubkey).digest())
+    return get_output_address(h.hexdigest(), op_dup)

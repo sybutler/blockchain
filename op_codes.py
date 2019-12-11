@@ -1,7 +1,6 @@
 
- class OP_CODES():
-
-     opcodes = {
+class OP_CODES():
+    opcodes = {
          '00': 'OP_0',
          '4c': 'OP_PUSHDATA1',
          '4d': 'OP_PUSHDATA2',

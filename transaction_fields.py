@@ -1,4 +1,5 @@
-from FUK import convert_hex, reverse_bytes, convert_float_for_printing
+from FUK import convert_hex, reverse_bytes, convert_float_for_printing, get_output_address, get_input_address, double_sha256
+from input_output_parser import IO_Parser
 
 class TxIn:
     def __init__(self, prev_txid, index, script_length, input_script, sequence, value):
@@ -8,18 +9,30 @@ class TxIn:
         self.input_script = input_script
         self.sequence = sequence
         self.value = value
+        self.signature = None
+        self.pubkey = None
+        self.address = None
+        if self.value != -1:        # if not coinbase tx
+            self.get_script_info()
 
     def print_txIn(self):
-        # print('previous txid hash:', self.previous_txid_hash)
-        # print('index:', self.index_of_prev_txid_hash)
-        # print('script length:', self.script_length)
-        # print('input script:', self.input_script)
-        # print('sequence:', self.sequence)
-        # print('value:', self.value)
+        print('previous txid hash:', self.previous_txid_hash)
+        print('index:', self.index_of_prev_txid_hash)
+        print('script length:', self.script_length)
+        print('input script:', self.input_script)
+        print('sequence:', self.sequence)
+        print('value:', self.value)
+        print('signature:', self.signature)
+        print('pubkey:', self.pubkey)
+        print('address:', self.address)
         return self.value
 
     def get_value(self):
         return self.value
+
+    def get_script_info(self):
+        self.signature, self.pubkey = IO_Parser.parse_input(self.input_script)
+        self.address = get_input_address(self.pubkey, True)
 
 
 class TxOut:
@@ -27,12 +40,22 @@ class TxOut:
         self.value = value
         self.script_length = script_length
         self.output_script = output_script
+        self.pubkey_hash = None
+        self.address = None
+        self.get_script_info()
 
     def print_txOut(self):
-        # print('value:', self.value)
-        # print('script length:', self.script_length)
-        # print('output script:', self.output_script)
+        print('value:', self.value)
+        print('script length:', self.script_length)
+        print('output script:', self.output_script)
+        print('pubkey hash:', self.pubkey_hash)
+        print('address:', self.address)
         return self.value
+
+    def get_script_info(self):
+        self.output_script, self.pubkey_hash, op_dup = IO_Parser.parse_output(self.output_script)
+        self.address = get_output_address(self.pubkey_hash, op_dup)
+
 
 
 class Transaction:
