@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="8427e814-b95e-4354-b033-f416407ed665" name="Default Changelist" comment="" />
+=======
     <list default="true" id="8427e814-b95e-4354-b033-f416407ed665" name="Default Changelist" comment="">
 <<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/input_output_parser.py" afterDir="false" />
@@ -21,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/transaction_fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/transaction_fields.py" afterDir="false" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
     </list>
+>>>>>>> refs/remotes/origin/master
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/FUKblockchain$heebeejeebees.coverage" NAME="heebeejeebees Coverage Results" MODIFIED="1575849159031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FUKblockchain$tester.coverage" NAME="tester Coverage Results" MODIFIED="1575825053076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FUKblockchain$tester_block_header.coverage" NAME="tester_block_header Coverage Results" MODIFIED="1575852488095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FUKblockchain$tester_block_header.coverage" NAME="tester_block_header Coverage Results" MODIFIED="1575856717080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FUKblockchain$FUK.coverage" NAME="FUK Coverage Results" MODIFIED="1575835816260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 <<<<<<< HEAD
@@ -53,12 +57,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7718" />
+          <entry key="Python Console" value="34" />
+          <entry key="py" value="8640" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="7718" />
+          <entry key="Python" value="8674" />
         </counts>
       </usages-collector>
     </session>
@@ -70,6 +75,10 @@
         <entry file="file://$PROJECT_DIR$/FUK.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+            <state relative-caret-position="459">
+              <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+=======
+<<<<<<< HEAD
             <state relative-caret-position="680">
               <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
               <folding>
@@ -77,6 +86,7 @@
 =======
             <state relative-caret-position="240">
               <caret line="67" selection-start-line="67" selection-end-line="67" />
+>>>>>>> refs/remotes/origin/master
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
                 <marker date="1575849783320" expanded="true" signature="425:582" ph="..." />
@@ -91,6 +101,13 @@
         <entry file="file://$PROJECT_DIR$/tester.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+            <state relative-caret-position="748">
+              <caret line="44" column="60" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
+              <folding>
+                <marker date="1575854753769" expanded="true" signature="1639:1645" ph="..." />
+              </folding>
+=======
+<<<<<<< HEAD
             <state>
               <caret selection-end-column="42" />
               <folding>
@@ -99,6 +116,7 @@
 =======
             <state relative-caret-position="1462">
               <caret line="86" column="36" selection-start-line="86" selection-end-line="87" />
+>>>>>>> refs/remotes/origin/master
             </state>
           </provider>
         </entry>
@@ -133,20 +151,23 @@
       </file>
 <<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
+=======
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transaction_fields.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
               <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
 =======
       <file pinned="false" current-in-tab="true">
+>>>>>>> refs/remotes/origin/master
         <entry file="file://$PROJECT_DIR$/transaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+            <state relative-caret-position="153">
+              <caret line="9" column="11" selection-start-line="9" selection-end-line="10" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
-                <marker date="1575851025223" expanded="true" signature="3258:5378" ph="..." />
-                <marker date="1575851025223" expanded="true" signature="6572:7211" ph="..." />
+                <marker date="1575856717064" expanded="true" signature="3288:5408" ph="..." />
+                <marker date="1575856717064" expanded="true" signature="6602:7241" ph="..." />
               </folding>
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
             </state>
@@ -174,6 +195,10 @@
         <entry file="file://$PROJECT_DIR$/blargh.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+            <state relative-caret-position="-158">
+              <caret line="4" column="37" selection-start-line="4" selection-end-line="5" />
+=======
+<<<<<<< HEAD
             <state relative-caret-position="287">
               <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding>
@@ -183,6 +208,7 @@
             <state relative-caret-position="68">
               <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-end-line="5" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
+>>>>>>> refs/remotes/origin/master
             </state>
           </provider>
         </entry>
@@ -197,8 +223,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tester_block_header.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+            <state relative-caret-position="72">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -220,12 +246,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/heebeejeebees.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+=======
             <state relative-caret-position="357">
               <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
+>>>>>>> refs/remotes/origin/master
             </state>
           </provider>
         </entry>
@@ -263,9 +297,12 @@
       <find>get_Tx</find>
       <find>dif_target</find>
       <find>fee:</find>
-      <find>print('in</find>
       <find>here</find>
+<<<<<<< HEAD
+      <find>print('in</find>
+=======
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
+>>>>>>> refs/remotes/origin/master
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -278,12 +315,14 @@
         <option value="$PROJECT_DIR$/tester.py" />
         <option value="$PROJECT_DIR$/block_header.py" />
         <option value="$PROJECT_DIR$/block_header_fields.py" />
-        <option value="$PROJECT_DIR$/heebeejeebees.py" />
         <option value="$PROJECT_DIR$/FUK.py" />
-        <option value="$PROJECT_DIR$/transaction.py" />
         <option value="$PROJECT_DIR$/transaction_fields.py" />
         <option value="$PROJECT_DIR$/FUK.py" />
         <option value="$PROJECT_DIR$/tester_block_header.py" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/transaction.py" />
+        <option value="$PROJECT_DIR$/heebeejeebees.py" />
+=======
         <option value="$PROJECT_DIR$/block_header_fields.py" />
         <option value="$PROJECT_DIR$/blargh.py" />
         <option value="$PROJECT_DIR$/op_codes.txt" />
@@ -292,6 +331,7 @@
         <option value="$PROJECT_DIR$/op_codes_fixed.txt" />
         <option value="$PROJECT_DIR$/op_codes.py" />
         <option value="$PROJECT_DIR$/input_output_parser.py" />
+>>>>>>> refs/remotes/origin/master
       </list>
     </option>
   </component>
@@ -302,12 +342,17 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
+    <option name="x" value="1268" />
+    <option name="width" value="1302" />
+=======
     <option name="x" value="-11" />
 <<<<<<< HEAD
     <option name="width" value="980" />
     <option name="height" value="1031" />
 =======
     <option name="width" value="1472" />
+>>>>>>> refs/remotes/origin/master
     <option name="height" value="1381" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
   </component>
@@ -537,7 +582,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575835106076</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/sybutler/blockchain&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1575852550298</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575852550298</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/sybutler/blockchain&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1575857207527</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575857207527</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -557,14 +616,20 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15844786" />
 =======
     <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
-    <editor active="true" />
     <layout>
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36293164" />
+=======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19943622" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
+>>>>>>> refs/remotes/origin/master
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4180451" />
+=======
 <<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.43085107" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27482268" />
@@ -575,15 +640,22 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.320922" />
 =======
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2631579" />
+>>>>>>> refs/remotes/origin/master
       <window_info anchor="bottom" id="Debug" order="3" weight="0.7759398" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291367" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.0015037594" />
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4857143" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.39849624" />
+=======
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.48758864" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.39893618" />
+>>>>>>> refs/remotes/origin/master
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -752,6 +824,8 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/op_codes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -819,6 +893,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/block_header_fields.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -833,17 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heebeejeebees.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FUK.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="459">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <marker date="1575849783320" expanded="true" signature="425:582" ph="..." />
@@ -852,19 +920,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-158">
+          <caret line="4" column="37" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transaction_fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="60" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
+          <folding>
+            <marker date="1575854753769" expanded="true" signature="1639:1645" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tester_block_header.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="72">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+=======
         <state relative-caret-position="250">
           <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
+>>>>>>> refs/remotes/origin/master
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transaction_fields.py">
+    <entry file="file://$PROJECT_DIR$/transaction.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-end-line="10" />
+          <folding>
+            <marker date="1575856717064" expanded="true" signature="3288:5408" ph="..." />
+            <marker date="1575856717064" expanded="true" signature="6602:7241" ph="..." />
+          </folding>
+=======
 <<<<<<< HEAD
         <state relative-caret-position="98">
           <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
@@ -872,11 +970,16 @@
         <state relative-caret-position="1462">
           <caret line="86" column="36" selection-start-line="86" selection-end-line="87" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
+>>>>>>> refs/remotes/origin/master
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transaction.py">
+    <entry file="file://$PROJECT_DIR$/heebeejeebees.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+=======
 <<<<<<< HEAD
         <state relative-caret-position="-755">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
@@ -884,10 +987,9 @@
         <state relative-caret-position="255">
           <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
 >>>>>>> 9094acc09b5a69ea51999d7aab8b041aa2644b4b
+>>>>>>> refs/remotes/origin/master
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <marker date="1575851025223" expanded="true" signature="3258:5378" ph="..." />
-            <marker date="1575851025223" expanded="true" signature="6572:7211" ph="..." />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

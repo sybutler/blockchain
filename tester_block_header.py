@@ -1,6 +1,7 @@
 from block_header import BlockHeaderParser
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+import sys
 from transaction import TransactionParser
 from FUK import convert_float_for_printing
 
@@ -18,14 +19,20 @@ from FUK import convert_float_for_printing
 # random 300,500 height block
 url = "https://blockchain.info/rawblock/000000000000000038d7cdcbd44b407f757f30f76f6dbe3d96bd050db3c230df?format=hex"
 
+# getting block hash from cmd line
+# url = "https://blockchain.info/rawblock/" + sys.argv[1] + "?format=hex"
+# print('querying:', url)
 
 # genesis
 # url = "https://blockchain.info/rawblock/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f?format=hex"
 
-
-html = urlopen(url)
-soup = BeautifulSoup(html, 'lxml')
-raw_hex = soup.get_text()
+try:
+    html = urlopen(url)
+    soup = BeautifulSoup(html, 'lxml')
+    raw_hex = soup.get_text()
+except:
+    print('Unable to access URL. Please check your block hash')
+    exit()
 
 
 block_header_info, start_pos = BlockHeaderParser.parse_block_header(raw_hex)
@@ -36,19 +43,24 @@ try:
 except:
     print('Error: Timeout. The Bitcoin website may be down. Please try again later.')
 
-total = 0
+total_volume = 0
+
 total_fee = 0
 total_other = 0
+test_reward = 0
 
 for i in range(len(transactions)):
 
-        curr_total, curr_fee, curr_other = transactions[i].print_tx()
-        total += curr_total
-        total_fee += curr_fee
-        total_other += curr_other
-        print()
+    curr_volume, curr_fee, curr_other = transactions[i].print_tx()
 
-print(total)
-print(total - total_fee)
-print(total_fee)
-print(total_other)
+    if i == 0:
+        test_reward = curr_volume
+    else:
+        total_volume += curr_volume
+    total_fee += curr_fee
+    total_other += curr_other
+    print()
+
+print('Transaction Volume:', total_volume)
+print('Fee Reward:', total_fee - total_volume)
+print('Block Reward:', test_reward)
