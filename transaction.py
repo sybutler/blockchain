@@ -15,12 +15,12 @@ class TransactionParser:
     def parse_all_block_transactions(hex_data, num_transactions):
         transactions = []
 
-
         for i in range(num_transactions):
             transaction, updated_starting_point = TransactionParser.parse_transaction(hex_data)
             transactions.append(transaction)
+            transaction.print_tx()
+            print('==============')
             hex_data = hex_data[updated_starting_point:]
-            print_progress(i, num_transactions)
 
         return transactions
 
