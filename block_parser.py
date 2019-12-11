@@ -27,6 +27,7 @@ try:
     transactions = TransactionParser.parse_all_block_transactions(raw_hex[start_pos:], block_header_info.tx_counter)
 except:
     print('Error: Timeout. The Bitcoin website may be down. Please try again later.')
+    sys.exit()
 
 total_volume = 0
 
