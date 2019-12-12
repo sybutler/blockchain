@@ -30,14 +30,15 @@ class IO_Parser:
                 for i in range(num_bytes - pos/2 - 1 - pubkey_hash_len):
                     after_ops.append(IO_Parser.opcodes[output[2*i:2*(i + 1)]])
             except:
-                if 'OP_DUP' in before_ops:
-                    op_dup = True
-                output_script = ''
-                for i in range(len(before_ops)):
-                    output_script = output_script + before_ops[i] + '\n'
-                output_script = output_script + pubkey_hash + '\n'
-                for i in range(len(after_ops)):
-                    output_script = output_script + after_ops[i] + '\n'
+                pass
+            if 'OP_DUP' in before_ops:
+                op_dup = True
+            output_script = '\n'
+            for i in range(len(before_ops)):
+                output_script = output_script + before_ops[i] + '\n'
+            output_script = output_script + pubkey_hash + '\n'
+            for i in range(len(after_ops)):
+                output_script = output_script + after_ops[i] + '\n'
 
         return output_script, pubkey_hash, op_dup
 

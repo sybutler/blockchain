@@ -5,8 +5,8 @@ import sys
 from transaction import TransactionParser
 
 
-block_hash = sys.argv[1]
-
+# block_hash = sys.argv[1]
+block_hash = '000000000000000038d7cdcbd44b407f757f30f76f6dbe3d96bd050db3c230df'
 url = "https://blockchain.info/rawblock/" + block_hash + "?format=hex"
 
 
