@@ -27,6 +27,9 @@ class TxIn:
         print('address:', self.address)
         return self.value
 
+    def get_addends_txIn(self):
+        return self.value
+
     def get_value(self):
         return self.value
 
@@ -50,6 +53,9 @@ class TxOut:
         print('output script:', self.output_script)
         print('pubkey hash:', self.pubkey_hash)
         print('address:', self.address)
+        return self.value
+
+    def get_addends_txOut(self):
         return self.value
 
     def get_script_info(self):
@@ -110,3 +116,23 @@ class Transaction:
         # print('fee:', convert_float_for_printing(total_output_of_inputs - total_output))
         print('fee:', total_output_of_inputs - total_output)
         return total_output, total_output_of_inputs, total_output_of_inputs- total_output
+
+    def get_addends(self):
+        total_output = 0
+        total_output_of_inputs = 0
+
+        if self.inputs[0].get_value() == -1:
+            for i in range(self.output_count):
+                total_output += self.outputs[i].get_addends_txOut()  # sums outputs and prints individual output
+
+            return total_output, total_output_of_inputs, 0
+
+        for i in range(self.input_count):
+
+            total_output_of_inputs += self.inputs[i].get_addends_txIn()
+        for i in range(self.output_count):
+
+            total_output += self.outputs[i].get_addends_txOut()  # sums outputs and prints individual output
+
+        # print('fee:', convert_float_for_printing(total_output_of_inputs - total_output))
+        return total_output, total_output_of_inputs, total_output_of_inputs - total_output

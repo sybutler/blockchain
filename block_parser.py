@@ -6,7 +6,12 @@ from transaction import TransactionParser
 
 
 # block_hash = sys.argv[1]
+
 block_hash = '000000000000000038d7cdcbd44b407f757f30f76f6dbe3d96bd050db3c230df'
+# block_hash = '00000000000004134c412783c176c8db45a73508e13fd159502acfddd2f9a85c'
+# block_hash = '000000000000000038d7cdcbd44b407f757f30f76f6dbe3d96bd050db3c230df'
+
+
 url = "https://blockchain.info/rawblock/" + block_hash + "?format=hex"
 
 
@@ -23,11 +28,12 @@ block_header_info, start_pos = BlockHeaderParser.parse_block_header(raw_hex)
 print()
 print('Block Header:')
 block_header_info.print_block_header()
-try:
-    transactions = TransactionParser.parse_all_block_transactions(raw_hex[start_pos:], block_header_info.tx_counter)
-except:
-    print('Error: Timeout. The Bitcoin website may be down. Please try again later.')
-    sys.exit()
+print('=============================')
+# try:
+transactions = TransactionParser.parse_all_block_transactions(raw_hex[start_pos:], block_header_info.tx_counter)
+# except:
+#     print('Error: Timeout. The Bitcoin website may be down. Please try again later.')
+#     sys.exit()
 
 total_volume = 0
 
@@ -38,7 +44,8 @@ test_reward = 0
 print()
 for i in range(len(transactions)):
 
-    curr_volume, curr_fee, curr_other = transactions[i].print_tx()
+    # curr_volume, curr_fee, curr_other = transactions[i].print_tx()
+    curr_volume, curr_fee, curr_other = transactions[i].get_addends()
 
     if i == 0:
         test_reward = curr_volume
@@ -46,7 +53,6 @@ for i in range(len(transactions)):
         total_volume += curr_volume
     total_fee += curr_fee
     total_other += curr_other
-    print()
 
 print('====================================')
 print('Final Block Info...')
