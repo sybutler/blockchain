@@ -14,19 +14,6 @@ def convert_hex(hex_data):
 def convert_unix(unix_time):
     return datetime.fromtimestamp(unix_time)
 
-
-def print_progress(n, total):
-
-    percent = int(n / total * 100)
-
-    print('[', end='')
-    for i in range(percent):
-        print('X', end='')
-    for i in range(100-percent):
-        print('_', end='')
-    print(']')
-
-
 def reverse_bytes(hex_data):
     new_hex = ""
     for i in range(int(len(hex_data)/2)):

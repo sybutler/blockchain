@@ -25,12 +25,12 @@ class IO_Parser:
             pos = 2*i
             pubkey_hash_len = convert_hex(output[pos:pos + 2])
             pubkey_hash = output[pos + 2: pos + 2 + 2*pubkey_hash_len]
-            try:
-                after_ops = []
-                for i in range(num_bytes - pos/2 - 1 - pubkey_hash_len):
-                    after_ops.append(IO_Parser.opcodes[output[2*i:2*(i + 1)]])
-            except:
-                pass
+            pos = int((pos + 2 + 2*pubkey_hash_len)/2)
+
+            after_ops = []
+            for i in range(pos, int(num_bytes)):
+                after_ops.append(IO_Parser.opcodes[output[2*i:2*(i + 1)]])
+
             if 'OP_DUP' in before_ops:
                 op_dup = True
             output_script = '\n'
