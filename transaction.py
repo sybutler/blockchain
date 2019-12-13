@@ -1,6 +1,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-from utils import reverse_bytes, convert_hex, print_progress
+from utils import reverse_bytes, convert_hex
 from transaction_fields import Transaction
 from transaction_fields import TxIn
 from transaction_fields import TxOut
